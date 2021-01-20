@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@font-face{
+  font-family: 'karakaze_font';
+  src: url('karakaze-R.ttf')format('truetype'),;
+}
+
+/* ヘッダー*/
+
+.comment-header {
+  width: 100%;
+  min-width: 800px;
+  height: 130px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.kakomo-comment-icon {
+  width: 10vw; 
+}
+
+
+
+/* どんな飲み会にしたい？*/
+.select-contents-title {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  font-family:  serif,'arial black';
+}
+
+
+/*料理ジャンル・お酒・シーン*/
+.select-contents-heading {
+  width: 100%;
+  text-align: center;
+  padding: 10px 50px;
+  margin: auto;
+  background-color: #204969;
+  font-family:  serif,'arial black';
+  color: #f0f0f0;
+}
+
+/*タグと写真*/
+.flex-box {
+  margin-top: 5vh;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+
+.select-img-content{
+  width: 20vw;
+  height: 30vh;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.check_box {
+  padding: 0 10px;
+}
+
+/*ボタン*/
+
+.select-btn-contents{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+
+}
+.select-btn {
+  background: #294969;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 5px 5%;
+  text-decoration: none;
+  font-family:  serif,'arial black';
+}
+
+
+/* フッター*/
+.select-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5vh 0;
+}
+
+.copyright {
+  font-size: 13px;
+}
+

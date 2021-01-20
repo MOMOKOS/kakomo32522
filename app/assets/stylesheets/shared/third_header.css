@@ -1,0 +1,14 @@
+.third-header {
+  width: 100%;
+  min-width: 800px;
+  height: 130px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-logo {
+  width: 135px;
+  height: 135px;
+}

@@ -1,0 +1,65 @@
+<header class="comment-header">
+    <%= link_to image_tag("kakomo-logo03.jpg", class:"kakomo-comment-icon"), "/" %>
+    <%#= link_to image_tag('kakomo-logo05.jpg' , size: '185x50'), "/" %>
+</header>
+
+<h2 class='select-contents-title'>あなたへのおすすめ</h2>
+
+<div class='select-contents'>
+    <ul class='select-lists flex-box'>
+      <li class='select-list'>
+       <%= image_tag "kakomo-recommend01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "ラクレットチーズセット" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-recommend02.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "焼き鳥お任せ5本セット" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-recommend03.jpeg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "パーティースナック" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-recommend04.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "串カツセット" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-recommend05.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "もつ鍋セット" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-recommend06.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "おばんざいセット" %>
+       </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class ="select-btn-contents">
+  <%=link_to '購入する', root_path, class:"select-btn" %>
+</div>
+
+<footer class="select-footer">
+    <p class="copyright">
+      Copyright(C) Kakomu ALL RIGHTS RESERVED.
+    </p>
+</footer>
+

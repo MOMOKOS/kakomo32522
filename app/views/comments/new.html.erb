@@ -1,0 +1,79 @@
+<div class="items-sell-contents">
+  <header class="comment-header">
+    <%= link_to image_tag("kakomo-logo03.jpg", class:"kakomo-comment-icon"), "/" %>
+    <%#= link_to image_tag('kakomo-logo05.jpg' , size: '185x50'), "/" %>
+    
+  </header>
+  <div class="items-sell-main">
+    <h2 class="items-sell-title">感想を投稿する</h2>
+    <%= form_with model:@comment,local: true do |f| %>
+
+    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+    <%# render 'shared/error_messages', model: f.object %>
+    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+
+    <%# メニュー画像 %>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        飲み会の写真
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"item-image" %>
+      </div>
+    </div>
+    <%# /メニュー画像 %>
+    <%# 商品名と商品説明 %>
+    <div class="new-items">
+      <div class="weight-bold-text">
+        注文したおつまみセット
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          飲み会はいかがでしたか？
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :description, class:"items-text", id:"item-info", placeholder:"友達との飲み会で利用しました！同じおつまみを囲むことで対面の飲み会のような一体感が生まれました！会話のきっかけにもなり話が弾みました。" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+    </div>
+    <%# /商品名と商品説明 %>
+
+    <%# 商品の詳細 %>
+        <div class="weight-bold-text">
+          選んだシーンは？
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:scene_id, Scene.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    <%# /商品の詳細 %>
+
+    <%# 注意書き %>
+    <div class="caution">
+      <p class="sentence">
+        <a href="#">誹謗中傷</a>
+        などの文言がないか必ずご確認ください。
+      </p>
+      <p class="sentence">
+        投稿いただいたコメントは今後のサービス向上に役立ててまいります。
+      </p>
+    </div>
+    <%# /注意書き %>
+    <%# 下部ボタン %>
+    <div class="comment-btn-contents">
+      <%= f.submit "投稿する" ,class:"comment-btn" %>
+      <%#=link_to 'もどる', root_path, class:"comment-back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+  </div>
+  <% end %>
+
+  <footer class="select-footer">
+    <p class="copyright">
+      Copyright(C) Kakomu ALL RIGHTS RESERVED.
+    </p>
+</footer>
+</div>

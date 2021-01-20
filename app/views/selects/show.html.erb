@@ -1,0 +1,151 @@
+<header class="comment-header">
+    <%= link_to image_tag("kakomo-logo03.jpg", class:"kakomo-comment-icon"), "/" %>
+    <%#= link_to image_tag('kakomo-logo05.jpg' , size: '185x50'), "/" %>
+</header>
+
+<h2 class='select-contents-title'>どんな飲み会にしたい？</h2>
+
+<div class='select-contents'>
+  <div class="select-contents-heading">
+    料理のジャンル
+  </div>
+    <ul class='select-lists flex-box'>
+      <li class='select-list'>
+       <%= image_tag "kakomo-yakitori01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "和食" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-italian02.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "洋食" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-tyuuka01.jpeg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "中華" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-yousyoku01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "イタリアン" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-ethnic01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "エスニック" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-bar01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "バー" %>
+       </div>
+      </li>
+    </ul>
+    <div class="select-contents-heading">
+    合わせたい飲み物
+  </div>
+    <ul class='select-lists flex-box'>
+      <li class='select-list'>
+       <%= image_tag "kakomo-beer02.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "ビール" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-wine01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "ワイン" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-nihonsyu01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "日本酒" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-syotyu01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "焼酎" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-whisky01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "ウイスキー" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-caktail01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "カクテル" %>
+       </div>
+      </li>
+    </ul>
+  </div>
+  <div class="select-contents-heading">
+    飲み会のシーン
+  </div>
+  </div>
+    <ul class='select-lists flex-box'>
+      <li class='select-list'>
+       <%= image_tag "kakomo-party02.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "とにかく盛り上がりたい！" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-sittori01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "じっくりお酒を交わしたい" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-party01.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "お祝いに花を添えたい" %>
+       </div>
+      </li>
+      <li class='select-list'>
+       <%= image_tag "kakomo-snaq04.jpg", class:"select-img-content" %>
+       <div class="check_box" >
+         <%= check_box_tag :sample %>
+         <%= label_tag :sample, "新しいおつまみを発見したい" %>
+       </div>
+      </li>
+    </ul>
+  </div>
+  <div class="select-btn-contents">
+     <div class="button">進む</button>
+  </div>
+</div>
+
+
+
+<footer class="select-footer">
+    <p class="copyright">
+      Copyright(C) Kakomu ALL RIGHTS RESERVED.
+    </p>
+</footer>
+

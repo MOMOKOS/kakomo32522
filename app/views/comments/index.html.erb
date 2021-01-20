@@ -1,0 +1,238 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      「おいしい」を、囲もう。
+    </h2>
+    <p class='service-explain'>
+      離れた場所にいても、同じおつまみを食べよう。
+    </p>
+    <p class='service-explain'>
+      kakomoは、オンライン飲み会のためのコミュニケーションフード宅配サービスです。
+    </p>
+    <div class='store-btn'>
+      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+    </div>
+  </div>
+  <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
+
+  <%# FURIMAが選ばれる3つの理由部分 %>
+  <div class='select-reason-contents'>
+    <h2 class='title'>
+      kakomoが届けたいこと
+    </h2>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= image_tag "kakomo-snaq03.jpg", class:"list-pict" %>
+        <%# span class='reason-list-number'>1</span%>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>「おいしい」共通体験</span>
+        </h3>
+        <p class='reason-list-description'>
+          離れた場所にいても、同じおつまみを囲めば従来の飲み会のような一体感が生まれます。
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "kakomo-snaq02.jpg", class:"list-pict" %>
+        <%#span class='reason-list-number'>2</span%>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>おつまみ診断</span>
+        </h3>
+        <p class='reason-list-description'>
+          お好きな料理や飲み会のムードを答えるだけ。ぴったりなおつまみを提案します。
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "kakomo-snaq01.jpg", class:"list-pict" %>
+        <%# span class='reason-list-number'>3</span%>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>好きな場所にお届け</span>
+        </h3>
+        <p class='reason-list-description'>
+          ご自宅やお仕事場のポストにおつまみセットをお届け。
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "kakomo-snaq04.jpg", class:"list-pict" %>
+        <%# span class='reason-list-number'>3</span%>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>お好みにアレンジ</span>
+        </h3>
+        <p class='reason-list-description'>
+          アレルギー成分などご指定ください。一部の方のみ抜くことも可能です。
+        </p>
+      </li>
+    </ul>
+  </div>
+  <%# /FURIMAが選ばれる3つの理由部分 %>
+
+  <%# 画面中央の「会員数日本一位」帯部分 %>
+  <div class='ad-contents'>
+    <h2 class='ad-title'>
+      
+    </h2>
+    <p class='ad-explain'>
+     Kakomoはおつまみに特化した宅配サービスです。
+    </p>
+    <p class='ad-explain'>
+     今夜は画面の向こうのあの人と、一緒につまみましょう。
+    </p>
+    <p class='ad-explain'>
+     いつかまた、乾杯できることを楽しみに。
+    </p>
+    <div class='store-btn'>
+      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+    </div>
+  </div>
+  <%# /画面中央の「会員数日本一位」帯部分 %>
+
+  <%# KAKOMOで商品が届くまで %>
+  <div class='feature-contents'>
+    <h2 class='title'>
+      Kakomoで商品が届くまで
+    </h2>
+    <ul class='feature-lists'>
+      <li class='list'>
+        <%= image_tag "kakomo-howto01.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          おつまみ診断
+        </h3>
+        <p class='feature-list-description'>
+          食の好みや除外したい食材などの情報をご入力ください。ご購入手続きは診断の後にございます。
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "kakomo-howto02.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          ポストにお届け
+        </h3>
+        <p class='feature-list-description'>
+          ご自宅やお仕事場のポストに商品をお届け。置き配などのご指定も承ります。
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "kakomo-howto03.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          飲み会スタート
+        </h3>
+        <p class='feature-list-description'>
+          おつまみを開いて、おうちのお酒で乾杯！（お酒はセットに含まれません）
+        </p>
+      </li>
+    </ul>
+  </div>
+  <%# /KAKOMOで商品が届くまで %>
+
+ <%# 商品一覧 %>
+  <div class='item-contents'>
+     <h2 class='title'>
+       お客さまの声
+     </h2>
+    <ul class='item-lists'>
+      <% @comments.each do |comment| %>
+        <li class='list'>
+          <%= link_to comment_path(comment.id) do %>
+            <div class='item-img-content'>
+             <%= image_tag comment.image.variant(resize: '250x300'), class: 'comment-image' if comment.image.attached? %>
+            </div>
+            <div class='item-info'>
+            <h3 class='item-name'>
+            <%= comment.name %>
+            </h3>
+            <div class='item-price'>
+            <span><%= comment.description %></span>
+            <div class='star-btn'>
+              <%= image_tag "star.png", class:"star-icon" %>
+              <span class='star-count'>0</span>
+            </div>
+           </div>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+ </div>
+    
+  <%# /商品一覧 %>
+
+  <%# サービスを使う %>
+  <div class='item-contents'>
+  <h2 class='title'>
+      おつまみを選ぶ
+  </h2>
+    <ul class='item-lists'>
+        <li class='list'>
+         <%= form_with model:@item,local: true do |f| %>
+           <div class="category-list">
+            シーンから選ぶ
+           </div>
+           <%= f.collection_select(:scene_id, Scene.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+           <div class='go-btn'>
+             <%= f.submit "進む" ,class:"login-go-btn" %>
+           </div>
+          <% end %>
+        </li>
+
+        <li class='list'>
+         <%= form_with model:@item,local: true do |f| %>
+           <div class="category-list">
+            ジャンルから選ぶ
+           </div>
+           <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+           <div class='go-btn'>
+             <%= f.submit "進む" ,class:"login-go-btn" %>
+           </div>
+          <% end %>
+        </li>
+
+        <li class='list'>
+         <%= form_with model:@item,local: true do |f| %>
+           <div class="category-list">
+            飲みものから選ぶ
+           </div>
+           <%= f.collection_select(:drink_id, Drink.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+           <div class='go-btn'>
+             <%= f.submit "進む" ,class:"login-go-btn" %>
+           </div>
+          <% end %>
+        </li>
+    </ul>
+ </div>
+  
+  <!--
+  <div class='snaq-check-contents'>
+    <ul class='snaq-check-lists'>
+      <li><%= link_to 'おつまみ診断を始める', "#", class: "category-list" %></li>
+      
+    </ul>
+    <ul class='snaq-check-lists'>
+      <%#li><%= link_to 'カテゴリーから選ぶ', "#", class: "category-list" %></li>
+      <%= form_with model:@item,local: true do |f| %>
+      <div class="category-list">
+          シーンから選ぶ
+          <%#span class="indispensable">必須</span%>
+        </div>
+        <%= f.collection_select(:scene_id, Scene.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+      <div class='go-btn'>
+       <%= f.submit "進む" ,class:"login-go-btn" %>
+      </div>
+     <% end %>
+    </ul>
+  </div>
+  -->
+  <%# /サービスを使う%>
+
+</div>
+
+<%= link_to new_select_path, class: 'purchase-btn' do %>
+  <span class='purchase-btn-text'>どんな飲み会にしたい？</span>
+  <%= image_tag 'icon-dish.jpg' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
+
+<%= render "shared/footer" %>
+
+

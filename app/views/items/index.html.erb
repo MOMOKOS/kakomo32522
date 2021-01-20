@@ -1,0 +1,45 @@
+<header class="comment-header">
+    <%= link_to image_tag("kakomo-logo03.jpg", class:"kakomo-comment-icon"), "/" %>
+    <%#= link_to image_tag('kakomo-logo05.jpg' , size: '185x50'), "/" %>
+</header>
+
+<h2 class='select-contents-title'></h2>
+
+<div class='main'>
+<div class="select-contents-heading">
+    料理のジャンル
+</div>
+<%# 商品一覧 %>
+  <div class='item-contents'>
+    <ul class='item-lists'>
+      <%# if @comments.present? %> 
+        <% @items.each do |item| %>
+        <li class='list'>
+        <%= link_to item_path(item.id) do %>
+        <div class='item-img-content'>
+          <%= image_tag item.image.variant(resize: '250x300'), class: 'item-image' if item.image.attached? %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= item.name %>
+          </h3>
+          <div class='item-price'>
+            <span><%= item.description %></span>
+            <div class='star-btn'>
+              <%= image_tag "star.png", class:"star-icon" %>
+              <span class='star-count'>0</span>
+            </div>
+          </div>
+        </div>
+        <% end %>
+        </li>
+        <% end %>
+  </div>
+  <%# /商品一覧 %>
+</div>
+
+<footer class="item-footer">
+    <p class="item-copyright">
+      Copyright(C) Kakomu ALL RIGHTS RESERVED.
+    </p>
+</footer>
